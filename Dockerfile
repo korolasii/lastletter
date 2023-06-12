@@ -4,4 +4,4 @@ RUN mkdir -p /docker/app/lastletter/
 WORKDIR /docker/app/lastletter/
 
 COPY . /docker/app/lastletter/
-RUN pip install -r requirements.txt
+RUN pip install -r req.txt
