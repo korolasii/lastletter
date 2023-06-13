@@ -198,7 +198,7 @@ async def get(message: types.Message):
                          reply_markup=await keyboard_back())
     elif message.text not in spisok_slov and game_info == 'Толковый словарь':
         if message.text.strip(
-                string.punctuation + " " + string.digits).lower() in open_file_txt():
+                string.punctuation + " " + string.digits).lower() in txt_file:
             await slovo_information_2_0(message.text.strip(
                 string.punctuation + " " + string.digits).lower(), message)
     elif message.text == 'Играть':
