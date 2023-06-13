@@ -5,3 +5,5 @@ WORKDIR /docker/app/lastletter/
 
 COPY . /docker/app/lastletter/
 RUN pip install -r req.txt
+
+CMD ["python","main.py"]
